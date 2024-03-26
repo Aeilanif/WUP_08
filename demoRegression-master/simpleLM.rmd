@@ -30,6 +30,8 @@ abline(simpNECK)
 summary.lm(simpNECK)
 ```
 
+The results from this graph show us that the variable of NECK has a strong effect of finding the length of a bear by an adjusted r-squared value of 0.75.
+
 ```{r}
 simpAGE <- lm(LENGTH~AGE,data=bears)
 plot(LENGTH~AGE, data=bears)
@@ -37,7 +39,54 @@ abline (simpAGE)
 summary.lm(simpAGE)
 ```
 
+This second graph gives us a value of an adjusted r-squared 0.50. 
+
+## Head Length
+
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted R-squared for LENGTH ~ HEADLEN is 0.84.
+
+## Head Width
+
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted R-squared for LENGTH ~ HEAD WIDTH is 0.53.
+
+## Chest
+
+```{r}
+simp <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted R-Squared for LENGTH ~ CHEST is 0.79.
+
+## Weight
+
+```{r}
+simp <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The adjusted R-squared for LENGTH ~ WEIGHT is 0.74.
 
 
-Based off these two simple models of the bears length, between NECK and AGE  
+
+Based off these two simple models of the bears length, between NECK and AGE
+
 
