@@ -5,6 +5,9 @@ date: "Spring 2024"
 output: html_document
 ---
 
+## Compare all models
+Predict LENGTH based on the variables other than LENGTH. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -35,5 +38,6 @@ summary.lm(simpAGE)
 ```
 
 
-## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
+
+Based off these two simple models of the bears length, between NECK and AGE  
 
