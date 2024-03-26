@@ -21,10 +21,10 @@ bears$MONTH<- as.factor(bears$MONTH)
 ## Model LENGTH ~ NECK  this is an example  
 
 ```{r}
-simp <- lm(LENGTH~NECK,data=bears)
+simpNECK <- lm(LENGTH~NECK,data=bears)
 plot(LENGTH~NECK,data=bears)
-abline(simp)
-summary.lm(simp)
+abline(simpNECK)
+summary.lm(simpNECK)
 ```
 
 
