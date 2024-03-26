@@ -85,8 +85,16 @@ summary.lm(simp)
 
 The adjusted R-squared for LENGTH ~ WEIGHT is 0.74.
 
+# Discussion and Conclusion
 
+AGE: 0.5073  
+HEAD WIDTH: 0.5321   
+WEIGHT: 0.7423  
+CHEST: 0.7869  
+HEAD LENGTH: 0.8434  
+NECK:0.7476
 
-Based off these two simple models of the bears length, between NECK and AGE
+In conclusion 0.8434 for the head length is the highest adjusted R-Squared computation, proving to be the best out of the six.
+Based off these two simple models of the bears length, between NECK and AGE.
 
 
